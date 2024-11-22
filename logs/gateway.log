@@ -1,0 +1,396 @@
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/gateway/app.py", line 2, in <module>
+    from gateway.infrastructure.routes.gateway_routes import gateway_routes
+ModuleNotFoundError: No module named 'gateway'
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:22:35] "GET /products HTTP/1.1" 404 -
+127.0.0.1 - - [21/Nov/2024 23:22:41] "GET /products HTTP/1.1" 404 -
+127.0.0.1 - - [21/Nov/2024 23:22:44] "GET /users HTTP/1.1" 404 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:24:10] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:15] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:18] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:42] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:24:50] "POST /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:19] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:24] "POST /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:45] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:26:50] "GET /products HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+[2024-11-21 23:37:36,376] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 700, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 395, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x72cbcb465570>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 756, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 576, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /users (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72cbcb465570>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/cgume/SOA/gateway/infrastructure/routes/gateway_routes.py", line 33, in users_proxy
+    response = requests.get(f"{USERS_SERVICE_URL}/users")
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /users (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72cbcb465570>: Failed to establish a new connection: [Errno 111] Connection refused'))
+127.0.0.1 - - [21/Nov/2024 23:37:36] "GET /users HTTP/1.1" 500 -
+[2024-11-21 23:37:40,229] ERROR in app: Exception on /products [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 700, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 395, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x72cbcb466890>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 756, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 576, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /products (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72cbcb466890>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/cgume/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/cgume/SOA/gateway/infrastructure/routes/gateway_routes.py", line 41, in products_proxy
+    response = requests.get(f"{PRODUCTS_SERVICE_URL}/products")
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/cgume/.local/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /products (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72cbcb466890>: Failed to establish a new connection: [Errno 111] Connection refused'))
+127.0.0.1 - - [21/Nov/2024 23:37:40] "GET /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:37:42] "GET /health HTTP/1.1" 500 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:45:41] "GET /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:45:50] "GET /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:45:53] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:47:39] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:47:44] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:47:56] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:48:11] "POST /products HTTP/1.1" 500 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:52:44] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:52:48] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:52:52] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:52:56] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [21/Nov/2024 23:53:08] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:54:52] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:54:58] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:55:03] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:55:08] "POST /users HTTP/1.1" 500 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:55:53] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:55:58] "GET /users HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:57:10] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:57:14] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:57:17] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [21/Nov/2024 23:57:23] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:05:35] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:38] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:40] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:44] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:05:47] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:06:36] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:07:07] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:11] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:15] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:18] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:07:28] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:09:53] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:09:57] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:10:00] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:10:04] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:10:08] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:13:24] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:13:50] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:17:13] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:17:16] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:20:32] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:22:48] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+127.0.0.1 - - [22/Nov/2024 00:24:47] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:25:04] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:25:55] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:27:37] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:27:40] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:30:00] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:30:18] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.13:5000
+Press CTRL+C to quit

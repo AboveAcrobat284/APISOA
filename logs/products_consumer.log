@@ -1,0 +1,92 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 33, in <module>
+    start_product_consumer()
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 29, in start_product_consumer
+    channel.start_consuming()
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 523, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.ConnectionClosedByBroker: (320, "CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'")
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': 'f6ea9e1e-6594-4d82-ba58-63186b384e7e', '_id': 'cfe76456-5f56-47af-beda-b356c25f8ba8'}}"
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '6abaea5c-b5b4-48c0-a18b-0f7434c6c2d3', '_id': '9a410d3d-d8a7-44d8-aacf-99c786e32138'}}"
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '7c6ff6f0-344c-4e53-8055-2f57258187ed', '_id': '9b02b0ce-9e7d-4ea8-b06d-9b821948cd76'}}"
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 33, in <module>
+    start_product_consumer()
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 29, in start_product_consumer
+    channel.start_consuming()
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 523, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.ConnectionClosedByBroker: (320, "CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'")
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '1cece030-dce0-4907-bba6-c13d51686351', '_id': '516499e2-9c58-434c-a057-ad6ec5f715e0'}}"
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '9a6a8a08-0b88-4e19-86fb-d4d30c7f0a3f', '_id': '364b1eb1-3062-4867-b021-73ba41823e09'}}"
+ [x] Conexión cerrada por el broker.
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '6b9c096d-e30f-4d83-a8d8-3f1e65799e7e', '_id': '0b56ea6c-c1d2-4547-b892-77543baaf05e'}}"
+ [x] Conexión cerrada por el broker.
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '3e3bbfb6-c4c3-45df-ab15-59592e491b4f', '_id': '2fbc0bf4-b009-4ef4-a86c-e0372951354f'}}"
+ [x] Conexión cerrada por el broker.
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Conexión cerrada por el broker.
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': 'b42d1e69-c20f-46e3-8034-29e33c5c2c57', '_id': '6f0b0529-4eae-4f27-8220-009660846488'}}"
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': '99048a3c-1944-4c94-abff-ac97ece6aad6', '_id': '66ee72a4-0485-488f-949c-264a669c809e'}}"
+ [x] Conexión cerrada por el broker.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 42, in <module>
+    start_product_consumer()
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 20, in start_product_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b"{'operation': 'create', 'data': {'name': 'hexatlon13', 'price': 1500, 'id': 'd3e63cca-c68a-4bfa-b659-bb04d5f65c12', '_id': 'fa844e63-4338-476f-b432-57ad63d6b613'}}"
+ [x] Conexión cerrada por el broker.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 42, in <module>
+    start_product_consumer()
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 20, in start_product_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b'{"operation": "create", "data": {"name": "hexatlon13", "price": 1500, "id": "d962d7e1-8a52-423d-ac3e-f46aad7f49f8", "_id": "52dba5ce-4b41-4ac6-b9eb-c34d2a1240f3"}}'
+ [x] Conexión cerrada por el broker.

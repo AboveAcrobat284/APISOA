@@ -1,0 +1,225 @@
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+ModuleNotFoundError: No module named 'products_service'
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:24:15] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:18] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:50] "POST /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:24] "POST /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:50] "GET /products HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+  File "/home/cgume/SOA/products_service/infrastructure/routes/product_routes.py", line 6, in <module>
+    product_controller = ProductController()
+  File "/home/cgume/SOA/products_service/infrastructure/controllers/product_controller.py", line 9, in __init__
+    self.product_use_case = ProductUseCase(ProductRepository(database))
+TypeError: ProductRepository.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+  File "/home/cgume/SOA/products_service/infrastructure/routes/product_routes.py", line 6, in <module>
+    product_controller = ProductController()
+  File "/home/cgume/SOA/products_service/infrastructure/controllers/product_controller.py", line 9, in __init__
+    self.product_use_case = ProductUseCase(ProductRepository(database))
+TypeError: ProductRepository.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+  File "/home/cgume/SOA/products_service/infrastructure/routes/product_routes.py", line 6, in <module>
+    product_controller = ProductController()
+  File "/home/cgume/SOA/products_service/infrastructure/controllers/product_controller.py", line 9, in __init__
+    self.product_use_case = ProductUseCase(ProductRepository(database))
+TypeError: ProductRepository.__init__() takes 1 positional argument but 2 were given
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:45:50] "GET /products HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:45:53] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:47:39] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:48:11] "POST /products HTTP/1.1" 500 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:52:48] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:52:52] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:53:08] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:54:58] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:55:03] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:57:14] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:57:23] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:05:38] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:40] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:47] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:06:36] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:07:11] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:15] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:28] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:09:53] "POST /products HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:10:04] "GET /products HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:10:08] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:13:24] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:17:16] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:20:32] "POST /products HTTP/1.1" 201 -
+Traceback (most recent call last):
+  File "/home/cgume/SOA/products_service/app.py", line 2, in <module>
+    from products_service.infrastructure.routes.product_routes import product_routes
+  File "/home/cgume/SOA/products_service/infrastructure/routes/product_routes.py", line 3, in <module>
+    from products_service.infrastructure.controllers.product_controller import ProductController
+ImportError: cannot import name 'ProductController' from 'products_service.infrastructure.controllers.product_controller' (/home/cgume/SOA/products_service/infrastructure/controllers/product_controller.py)
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:22:48] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5002 is in use by another program. Either identify and stop that program, or start the server with a different port.
+127.0.0.1 - - [22/Nov/2024 00:24:47] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:27:40] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:30:00] "POST /products HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.0.13:5002
+Press CTRL+C to quit

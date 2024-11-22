@@ -1,0 +1,227 @@
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+ModuleNotFoundError: No module named 'users_service'
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:24:10] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:18] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:24:42] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:19] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:26:45] "GET /users HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+  File "/home/cgume/SOA/users_service/infrastructure/routes/user_routes.py", line 6, in <module>
+    user_controller = UserController()
+  File "/home/cgume/SOA/users_service/infrastructure/controllers/user_controller.py", line 10, in __init__
+    self.user_use_case = UserUseCase(UserRepository(database))
+TypeError: UserRepository.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+  File "/home/cgume/SOA/users_service/infrastructure/routes/user_routes.py", line 6, in <module>
+    user_controller = UserController()
+  File "/home/cgume/SOA/users_service/infrastructure/controllers/user_controller.py", line 10, in __init__
+    self.user_use_case = UserUseCase(UserRepository(database))
+TypeError: UserRepository.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/cgume/SOA/users_service/app.py", line 2, in <module>
+    from users_service.infrastructure.routes.user_routes import user_routes
+  File "/home/cgume/SOA/users_service/infrastructure/routes/user_routes.py", line 6, in <module>
+    user_controller = UserController()
+  File "/home/cgume/SOA/users_service/infrastructure/controllers/user_controller.py", line 10, in __init__
+    self.user_use_case = UserUseCase(UserRepository(database))
+TypeError: UserRepository.__init__() takes 1 positional argument but 2 were given
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:45:41] "GET /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:45:53] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:47:44] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:47:56] "POST /users HTTP/1.1" 500 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:52:44] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:52:52] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:52:56] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:54:52] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:55:03] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:55:08] "POST /users HTTP/1.1" 500 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:55:53] "POST /users HTTP/1.1" 500 -
+127.0.0.1 - - [21/Nov/2024 23:55:58] "GET /users HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [21/Nov/2024 23:57:10] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2024 23:57:17] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:05:35] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:40] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:05:44] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:07:07] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:15] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:07:18] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:09:57] "POST /users HTTP/1.1" 201 -
+127.0.0.1 - - [22/Nov/2024 00:10:00] "GET /users HTTP/1.1" 200 -
+127.0.0.1 - - [22/Nov/2024 00:10:08] "GET /health HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:13:50] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:17:13] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5001 is in use by another program. Either identify and stop that program, or start the server with a different port.
+127.0.0.1 - - [22/Nov/2024 00:25:04] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:25:55] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:27:37] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
+127.0.0.1 - - [22/Nov/2024 00:30:18] "POST /users HTTP/1.1" 201 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.0.13:5001
+Press CTRL+C to quit
