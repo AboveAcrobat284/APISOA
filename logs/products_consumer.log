@@ -90,3 +90,37 @@ pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicate
  [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
  [x] Recibido mensaje en la cola 'products_queue': b'{"operation": "create", "data": {"name": "hexatlon13", "price": 1500, "id": "d962d7e1-8a52-423d-ac3e-f46aad7f49f8", "_id": "52dba5ce-4b41-4ac6-b9eb-c34d2a1240f3"}}'
  [x] Conexión cerrada por el broker.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 42, in <module>
+    start_product_consumer()
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 20, in start_product_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)
+ [*] Esperando mensajes en la cola 'products_queue'. Presiona CTRL+C para salir.
+ [x] Recibido mensaje en la cola 'products_queue': b'{"operation": "create", "data": {"name": "Buchanans", "price": 1500, "id": "abbbbe5e-40b3-41c6-b23b-74c6ff791fe8", "_id": "834100e7-eb4e-4961-9b51-fdbdb04b6892"}}'
+ [x] Recibido mensaje en la cola 'products_queue': b'{"operation": "create", "data": {"name": "Buchanans", "price": 1500, "id": "045b5c9f-b51f-43cc-ac24-513b0b616f65", "_id": "1e6e86fa-9af8-45e5-926e-ba69895cbfd3"}}'
+ [x] Recibido mensaje en la cola 'products_queue': b'{"operation": "create", "data": {"name": "Buchanans", "price": 1500, "id": "d4442c42-f961-4325-a9a8-0edb956ee49b", "_id": "639cc7cd-2c7a-40dd-b48e-4872b696d1c3"}}'
+ [x] Recibido mensaje en la cola 'products_queue': b'{"operation": "create", "data": {"name": "Buchanans", "price": 1500, "id": "2a809343-df71-4902-a960-915f870536ca", "_id": "c8274229-000d-4efb-ba3b-c99835ee2406"}}'
+ [x] Conexión cerrada por el broker.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 42, in <module>
+    start_product_consumer()
+  File "/home/cgume/SOA/products_service/infrastructure/rabbitmq_consumer.py", line 20, in start_product_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)

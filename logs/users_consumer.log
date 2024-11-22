@@ -172,3 +172,45 @@ Traceback (most recent call last):
   File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
     raise self._reap_last_connection_workflow_error(error)
 pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/users_service/infrastructure/rabbitmq_consumer.py", line 33, in <module>
+    start_user_consumer()
+  File "/home/cgume/SOA/users_service/infrastructure/rabbitmq_consumer.py", line 19, in start_user_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/users_service/infrastructure/rabbitmq_consumer.py", line 33, in <module>
+    start_user_consumer()
+  File "/home/cgume/SOA/users_service/infrastructure/rabbitmq_consumer.py", line 19, in start_user_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/cgume/SOA/users_service/infrastructure/rabbitmq_consumer.py", line 33, in <module>
+    start_user_consumer()
+  File "/home/cgume/SOA/users_service/infrastructure/rabbitmq_consumer.py", line 19, in start_user_consumer
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials))
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/cgume/.local/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.IncompatibleProtocolError: StreamLostError: ('Transport indicated EOF',)
